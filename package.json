@@ -1,17 +1,19 @@
 {
-  "name": "tailwind.css",
-  "version": "1.0.0",
-  "description": "Curso de tailwind css de platzi",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "postcss css/tailwind.css -o public/css/style.css"
-  },
-  "author": "Cristian Sacta",
-  "license": "MIT",
-  "dependencies": {
-    "autoprefixer": "^10.2.6",
-    "postcss-cli": "^8.3.1",
-    "tailwindcss": "^2.2.2"
-  }
+   "name": "tailwind.css",
+   "version": "1.0.0",
+   "description": "Curso de tailwind css de platzi",
+   "main": "index.js",
+   "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1",
+      "build": "postcss css/tailwind.css -o public/css/style.css",
+      "dev": "postcss css/tailwind.css -o public/css/styles.css --watch"
+   }
+},
+"author": "Cristian Sacta",
+"license": "MIT",
+"dependencies": {
+   "autoprefixer": "^10.2.6",
+   "postcss-cli": "^8.3.1",
+   "tailwindcss": "^2.2.2"
+}
 }
