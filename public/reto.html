@@ -12,7 +12,40 @@
    <main class="container mx-auto px-5">
       <section class="flex flex-col">
          <h1 class="font-bold text-purple-900 opacity-75 text-4xl text-center">Colores y dimensiones:</h1>
-         <button class="h-10 mt-3 rounded-full shadow-lg bg-blue-500 text-blue-100">Boton1</button>
+         <button class="h-10 mt-3 sm:w-auto md:w-32 rounded-full shadow-lg bg-blue-500 text-blue-100">Boton1</button>
+      </section>
+      <section class="flex flex-col">
+         <h1 class="font-bold text-purple-700 text-4xl text-center">Display y flexbox</h1>
+         <div class="ml-8 mt-8 flex flex-col items-center md:flex-row md:justify-between bg-gray-300 shadow-md rounded">
+            <button class="h-10 w-32 mt-3 rounded-full shadow-lg bg-blue-500 text-blue-100">Boton1</button>
+            <button class="h-10 w-32 mt-3 rounded-full shadow-lg bg-blue-500 text-blue-100">Boton2</button>
+            <button class="h-10 w-32 mt-3 rounded-full shadow-lg bg-blue-500 text-blue-100">Boton3</button>
+         </div>
+      </section>
+      <section class="flex flex-col">
+         <h1 class="mt-8 font-bold text-purple-700 text-4xl text-center">Pseudo-Class Variants</h1>
+         <div class="ml-8 mt-8 flex flex-col items-center md:flex-row md:justify-between bg-gray-300 shadow-md rounded">
+            <button class="hover:bg-blue-700 hover:text-white h-10 w-32 mt-3 rounded-full shadow-lg bg-blue-300 text-blue-800">Boton1</button>
+            <button class="hover:bg-blue-700 hover:text-white h-10 w-32 mt-3 rounded-full shadow-lg bg-blue-300 text-blue-800">Boton2</button>
+            <button class="hover:bg-blue-700 hover:text-white h-10 w-32 mt-3 rounded-full shadow-lg bg-blue-300 text-blue-800">Boton3</button>
+         </div>
+      </section>
+      <section class="flex flex-col">
+         <h1 class="mt-8 font-bold text-purple-700 text-4xl text-center">Extraer componentes usando @apply</h1>
+         <div class="flex flex-wrap">
+            <div class="alert alert-default">
+               Este mensaje es una alerta default.
+            </div>
+            <div class="alert alert-danger">
+               Este mensaje es una alerta danger.
+            </div>
+            <div class="alert alert-warning">
+               Este mensaje es una alerta warning.
+            </div>
+            <div class="alert alert-info">
+               Este mensaje es una alerta info.
+            </div>
+         </div>
       </section>
    </main>
 </body>

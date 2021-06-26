@@ -1,5 +1,22 @@
-@tailwind base;
+@tailwind base; 
 @tailwind components;
+.alert {
+  @apply py-3 px-4 mt-5 ml-5 rounded-lg;  
+}
+.alert-default {
+  @apply bg-gray-100 text-gray-500 border-2 border-gray-300;
+}
+.alert-danger {
+  @apply bg-red-100 text-red-700 border-2 border-red-400;
+}
+.alert-warning {
+  @apply bg-yellow-100 text-yellow-700 border-2 border-yellow-400;
+}
+.alert-info {
+  @apply bg-blue-100 text-blue-700 border-2 border-blue-400;
+}
+
+
 @tailwind utilities;
 
 @responsive {
