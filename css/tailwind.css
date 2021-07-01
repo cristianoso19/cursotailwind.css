@@ -1,8 +1,5 @@
 @tailwind base; 
 @tailwind components;
-.section {
-   @apply 
-}
 .alert {
   @apply py-3 px-4 mt-5 ml-5 rounded-lg;  
 }
