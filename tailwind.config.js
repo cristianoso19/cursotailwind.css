@@ -16,6 +16,7 @@ module.exports = {
   variants: {
     extend: {
       opacity: ["responsive", "hover", "focus", "disabled"],
+      padding: ["hover"],
     },
   },
   plugins: [],
