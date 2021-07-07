@@ -7,15 +7,43 @@
    <title>Header</title>
    <link rel="stylesheet" href="css/styles.css">
    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+   <script src="//unpkg.com/alpinejs" defer></script>
 </head>
 
 <body>
-   <div class="px-2 bg-secondary text-white flex justify-between items-center">
-      <div>
-         <img class="h-8 py-1" src="https://raw.githubusercontent.com/victoryoalli/platzifood/76946dc197de9980017a831db70f42577fce5991/public/images/logo-w.svg" alt="">
+   <nav x-data="{ open: false }" class="fixed z-10 w-full bg-secondary text-gray-200">
+      <div class="px-2 bg-secondary text-white flex justify-between items-center">
+         <div>
+            <img class="h-8 py-1" src="https://raw.githubusercontent.com/victoryoalli/platzifood/76946dc197de9980017a831db70f42577fce5991/public/images/logo-w.svg" alt="">
+         </div>
+         <div class="text-2xl" @click="open = true">&equiv;</div>
       </div>
-      <div class="text-2xl">&equiv;</div>
-   </div>
+      <div x-show="open" @click.away="open=false">
+         <div class="my-1 mx-2">
+            <input class="form-control" id="" type="search" name="" placeholder="Búsqueda">
+         </div>
+         <div class="py-1 mx-2 md:flex justify-around">
+            <div class="flex">
+               Precio:
+               <div class="ml-2">$</div>
+               <div class="ml-2 text-primary">$$</div>
+               <div class="ml-2">$$$</div>
+               <div class="ml-2">$$$$</div>
+            </div>
+            <div class="flex">
+               Calificación
+               <div class="ml-2 text-primary">&starf;</div>
+               <div class="ml-px text-primary">&starf;</div>
+               <div class="ml-px text-primary">&starf;</div>
+               <div class="ml-px text-primary">&starf;</div>
+               <div class="ml-px">&star;</div>
+            </div>
+            <div>
+               <button class="btn btn-primary">Filtrar</button>
+            </div>
+         </div>
+      </div>
+   </nav>
    <main class="bg-gray-400 mb-8">
       <div class="h-56 md:h-100 md:bg-center bg-no-repeat bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1562835155-1fa627c69744?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=968&q=80');">
       </div>
@@ -52,7 +80,7 @@
             <div>Comentarios</div>
             <textarea class="form-control focus:outline-none focus:shadow-outline" id="" name="" cols="30" rows="10"></textarea>
          </div>
-         <div><button class="rounded shadow-xl px-4 py-1 bg-gray-500 block mx-auto hover:shadow-none hover:bg-gray-700 hover:text-white">Enviar </button></div>
+         <div class="my-2"><button class="btn btn-primary mx-auto">Enviar </button></div>
 
       </div>
    </main>
